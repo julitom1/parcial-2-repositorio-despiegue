@@ -19,7 +19,7 @@ var apiclient = (function () {
 		postDatos : function(datos){
 			let promise = new Promise( (resolve, reject) => {
 				var postPromise = $.ajax({
-				url: "http://localhost:8080/postDatos",
+				url: "/postDatos",
 				type: 'POST',
 				data: datos,
 				contentType: "application/json"
